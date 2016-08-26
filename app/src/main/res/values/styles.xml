@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Base application theme. -->co
+    <style name="AppTheme" parent="AppBaseThemeLight.Base"/>
+    <style name="AppBaseThemeLight.Base" parent="Theme.AppCompat.Light">
+        <!--自定义主题-->
+        <item name="colorPrimary">@color/day_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/day_colorPrimaryDark</item>
+
+    </style>
+
+    <style name="Theme.AppStartLoad" parent="android:Theme.Black.NoTitleBar.Fullscreen">
+        <item name="android:background">@mipmap/welcome</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>
