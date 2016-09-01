@@ -6,7 +6,11 @@
         <!--自定义主题-->
         <item name="colorPrimary">@color/day_colorPrimary</item>
         <item name="colorPrimaryDark">@color/day_colorPrimaryDark</item>
-
+        <item name="android:actionBarStyle">@style/Theme.App.ActionBar</item>
+        <item name="android:actionMenuTextColor">@color/white</item>
+        <!--对ActionBar的字体颜色 起作用-->
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:windowBackground">@color/window_background</item>
     </style>
 
     <style name="Theme.AppStartLoad" parent="android:Theme.Black.NoTitleBar.Fullscreen">

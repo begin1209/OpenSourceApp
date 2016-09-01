@@ -12,6 +12,8 @@
     <color name="day_windows_bg">#fafafa</color>
     <color name="day_edit_color">#333333</color>
     <color name="day_edit_hit_color">#999999</color>
+    <color name="white">#ffffff</color>
+    <color name="window_background">#EBEBEB</color>
 
 
 </resources>

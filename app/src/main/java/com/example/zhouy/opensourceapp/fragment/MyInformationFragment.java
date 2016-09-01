@@ -4,5 +4,5 @@ package com.example.zhouy.opensourceapp.fragment;
  * User: zhy
  * Date: 2016-08-31
  */
-public class MyInformationFragment {
+public class MyInformationFragment extends BaseViewPagerFragment{
 }

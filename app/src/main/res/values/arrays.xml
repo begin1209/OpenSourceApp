@@ -1,2 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+
+
+    <!--综合页 ViewPager内容-->
+    <string-array name="main_together_viewpager_arrays">
+        <item>资讯</item>
+        <item>博客</item>
+        <item>问答</item>
+        <item>活动</item>
+    </string-array>
+
+    <string-array name="main_page_title">
+        <item>@string/together_page_title</item>
+        <item>@string/tweet_page_title</item>
+        <item>@string/discover_page_title</item>
+        <item>@string/my_page_title</item>
+    </string-array>
+</resources>
