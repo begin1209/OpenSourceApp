@@ -1,7 +1,6 @@
 package com.example.zhouy.opensourceapp.activity;
 
 import android.os.Bundle;
-import android.support.design.widget.TabLayout;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTabHost;
 import android.support.v4.view.ViewPager;
@@ -19,7 +18,7 @@ import com.example.zhouy.opensourceapp.R;
 import com.example.zhouy.opensourceapp.log.LogUtil;
 import com.example.zhouy.opensourceapp.model.MainTab;
 
-public class MainActivity extends AppCompatActivity implements TabHost.OnTabChangeListener{
+public class MainActivity extends AppCompatActivity implements TabHost.OnTabChangeListener {
 
 
     private String mTitle;
@@ -54,12 +53,12 @@ public class MainActivity extends AppCompatActivity implements TabHost.OnTabChan
             ImageView imageView = (ImageView) view.findViewById(R.id.tab_icon_view);
             textView.setText(tab.getResourceName());
             imageView.setImageResource(tab.getResourceIcon());
-            TabHost.TabSpec tabLayoutTab = mMainTabHost.newTabSpec(tab.getResourceName()+"");
+            TabHost.TabSpec tabLayoutTab = mMainTabHost.newTabSpec(tab.getResourceName() + "");
             if (i == 2) {
                 view.setVisibility(View.INVISIBLE);
             }
             tabLayoutTab.setIndicator(view);
-            mMainTabHost.addTab(tabLayoutTab,tab.getClassZ(),null);
+            mMainTabHost.addTab(tabLayoutTab, tab.getClassZ(), null);
         }
     }
 
@@ -90,6 +89,6 @@ public class MainActivity extends AppCompatActivity implements TabHost.OnTabChan
 
     @Override
     public void onTabChanged(String s) {
-        
+
     }
 }
