@@ -29,9 +29,15 @@ public class TogetherViewPagerFragment extends BaseViewPagerFragment {
 
     private List<Fragment> mFragmentLists = new ArrayList<>();
 
+    private List<TabLayout.Tab> tab = new ArrayList<>();
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        mFragmentLists.add(new NewsFragment());
+        mFragmentLists.add(new NewsFragment());
+        mFragmentLists.add(new NewsFragment());
+        mFragmentLists.add(new NewsFragment());
     }
 
     @Nullable
@@ -40,23 +46,15 @@ public class TogetherViewPagerFragment extends BaseViewPagerFragment {
 
         View view = inflater.inflate(R.layout.together_fragment,container,false);
         mTogetherViewPager = (ViewPager)view.findViewById(R.id.together_page_view_pager);
-        mFragmentLists.add(new NewsFragment());
-        mFragmentLists.add(new NewsFragment());
-        mFragmentLists.add(new NewsFragment());
-        mFragmentLists.add(new NewsFragment());
-        mTogetherFragmentAdapter = new TogetherFragmentAdapter(getActivity().getSupportFragmentManager(),
+        mTogetherFragmentAdapter = new TogetherFragmentAdapter(this.getChildFragmentManager(),
                 mFragmentLists);
         mTogetherViewPager.setAdapter(mTogetherFragmentAdapter);
         mTogetherTabLayout = (TabLayout)view.findViewById(R.id.together_page_tab);
-        mTogetherTabLayout.addTab(mTogetherTabLayout.newTab().setText("资讯"));
-        mTogetherTabLayout.addTab(mTogetherTabLayout.newTab().setText("博客"));
-        mTogetherTabLayout.addTab(mTogetherTabLayout.newTab().setText("问答"));
-        mTogetherTabLayout.addTab(mTogetherTabLayout.newTab().setText("活动"));
-        mTogetherTabLayout.setupWithViewPager(mTogetherViewPager);
-        mTogetherTabLayout.getTabAt(0).setText("资讯");
-        mTogetherTabLayout.getTabAt(1).setText("博客");
-        mTogetherTabLayout.getTabAt(2).setText("问答");
-        mTogetherTabLayout.getTabAt(3).setText("活动");
+            mTogetherTabLayout.setupWithViewPager(mTogetherViewPager);
+            mTogetherTabLayout.getTabAt(0).setText("资讯");
+            mTogetherTabLayout.getTabAt(1).setText("博客");
+            mTogetherTabLayout.getTabAt(2).setText("问答");
+            mTogetherTabLayout.getTabAt(3).setText("活动");
         return view;
     }
 }
