@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 
 import com.example.zhouy.opensourceapp.R;
 
-public class NewsFragment extends Fragment {
+public class NewsFragment extends BaseFragments {
 
     @Nullable
     @Override

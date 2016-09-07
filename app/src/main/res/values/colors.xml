@@ -16,4 +16,13 @@
     <color name="window_background">#EBEBEB</color>
 
 
+    <color name="transparent">#000000</color>
+    
+    <!--下拉刷新时的颜色-->
+    <color name="swipe_refresh_color1">#ff00ddff</color>
+    <color name="swipe_refresh_color2">#ffffbb33</color>
+    <color name="swipe_refresh_color3">#ffff4444</color>
+    <color name="swipe_refresh_color4">#ffaa66cc</color>
+
+
 </resources>
